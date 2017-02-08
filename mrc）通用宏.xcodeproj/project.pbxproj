@@ -15,6 +15,8 @@
 		B6988E2B1E10B2B000152356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6988E291E10B2B000152356 /* LaunchScreen.storyboard */; };
 		B6988E361E10B2B000152356 /* mrc____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6988E351E10B2B000152356 /* mrc____Tests.m */; };
 		B6988E411E10B2B000152356 /* mrc____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6988E401E10B2B000152356 /* mrc____UITests.m */; };
+		B6988E501E10B54A00152356 /* CSYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B6988E4F1E10B54A00152356 /* CSYTool.m */; };
+		B6988E531E10B5F300152356 /* CSYFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B6988E521E10B5F300152356 /* CSYFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		B6988E3C1E10B2B000152356 /* mrc）通用宏UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mrc）通用宏UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6988E401E10B2B000152356 /* mrc____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "mrc____UITests.m"; sourceTree = "<group>"; };
 		B6988E421E10B2B000152356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6988E4E1E10B54A00152356 /* CSYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSYTool.h; sourceTree = "<group>"; };
+		B6988E4F1E10B54A00152356 /* CSYTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSYTool.m; sourceTree = "<group>"; };
+		B6988E511E10B5F300152356 /* CSYFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSYFile.h; sourceTree = "<group>"; };
+		B6988E521E10B5F300152356 /* CSYFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSYFile.m; sourceTree = "<group>"; };
+		B6988E571E10B9FA00152356 /* Script.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Script.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +112,11 @@
 				B6988E1F1E10B2B000152356 /* AppDelegate.m */,
 				B6988E211E10B2B000152356 /* ViewController.h */,
 				B6988E221E10B2B000152356 /* ViewController.m */,
+				B6988E4E1E10B54A00152356 /* CSYTool.h */,
+				B6988E4F1E10B54A00152356 /* CSYTool.m */,
+				B6988E511E10B5F300152356 /* CSYFile.h */,
+				B6988E521E10B5F300152356 /* CSYFile.m */,
+				B6988E571E10B9FA00152356 /* Script.h */,
 				B6988E241E10B2B000152356 /* Main.storyboard */,
 				B6988E271E10B2B000152356 /* Assets.xcassets */,
 				B6988E291E10B2B000152356 /* LaunchScreen.storyboard */,
@@ -274,7 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6988E231E10B2B000152356 /* ViewController.m in Sources */,
+				B6988E501E10B54A00152356 /* CSYTool.m in Sources */,
 				B6988E201E10B2B000152356 /* AppDelegate.m in Sources */,
+				B6988E531E10B5F300152356 /* CSYFile.m in Sources */,
 				B6988E1D1E10B2B000152356 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = "mrc）通用宏/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "honchen.mrc----";
@@ -435,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = "mrc）通用宏/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "honchen.mrc----";
